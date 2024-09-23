@@ -5,7 +5,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -152,34 +151,28 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 auto; /* Cambiado para evitar desbordamiento horizontal */
-  max-width: 90%; /* Limitar el ancho en pantallas grandes */
+  margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
 
 .section-container {
   display: flex;
-  gap: 4rem;
-  height: 80%;
 }
 
 /* PROFILE SECTION */
 
 #profile {
   display: flex;
-  flex-wrap: wrap; /* Para que los elementos se ajusten en varias líneas si es necesario */
   justify-content: center;
   gap: 5rem;
-  height: auto; /* Cambiado para hacerlo dinámico */
-  max-width: 100%;
+  height: 80vh;
 }
 
 .section__pic-container {
   display: flex;
   height: 400px;
-  width: 100%;
-  max-width: 400px;
+  width: 400px;
   margin: auto 0;
 }
 
@@ -310,6 +303,17 @@ section {
   text-align: center;
 }
 
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -361,9 +365,8 @@ article .icon {
 }
 
 .project-img-container {
-  width: 100%;
-  max-width: 300px; /* Ajusta este valor según tus necesidades */
-  height: 300px;
+  width: 300px;  /* Ajusta este valor según tus necesidades */
+  height: 300px; /* Ajusta este valor según tus necesidades */
   overflow: hidden;
   border-radius: 2rem;
 }
@@ -400,7 +403,7 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -434,46 +437,4 @@ footer {
 
 footer p {
   text-align: center;
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width: 760px) {
-  section {
-    margin: 0 1rem; /* Ajusta márgenes para pantallas pequeñas */
-  }
-
-  .nav-links {
-    gap: 1rem; /* Reduce el gap del menú de navegación */
-  }
-
-  #profile {
-    flex-direction: column; /* Ajuste en pantallas pequeñas */
-    gap: 2rem;
-  }
-
-  .section__pic-container {
-    height: auto;
-    width: 100%;
-  }
-
-  .hamburger-icon {
-    display: flex;
-  }
-
-  .menu-links {
-    display: block;
-    right: auto;
-    left: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  section {
-    padding-top: 2vh;
-  }
-
-  .title {
-    font-size: 2.5rem;
-  }
 }
